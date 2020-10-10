@@ -10,7 +10,7 @@
       prompt: "What is the Web Url?"
       private: no
     - name: key
-      prompt: "What is the Authentication KEY ID"
+      prompt: "What is the Authentication KEY ID?"
       private: no
   tasks:
     - name: Set Timezone Amsterdam
