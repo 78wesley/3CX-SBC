@@ -29,7 +29,7 @@ When you run the ansible script, the script will asks you to fill in the followi
 - What is the Web Url? (3CX Web URL)
 - What is the Authentication KEY ID? (3CX Authentication KEY ID)
 
-You are find this information if you add a new 3CX SBC within 3CX found at **SIP-Trunk** > **Add SBC**. 
+You can find this information if you add a new 3CX SBC within 3CX found at **SIP-Trunk** > **Add SBC**. 
 
 I recommend to use the SBC Password as the system password so you will always be able to retrieve the password.
 ```sh
