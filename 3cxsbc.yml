@@ -1,0 +1,37 @@
+---
+- name: "3CX-SBC"
+  hosts: all
+  become: true
+  vars_prompt:
+    - name: passwd
+      prompt: "What will be the password of the system?"
+      private: no
+    - name: url
+      prompt: "What is the Web Url?"
+      private: no
+    - name: key
+      prompt: "What is the Authentication KEY ID"
+      private: no
+  tasks:
+    - name: Set Timezone Amsterdam
+      shell: timedatectl set-timezone Europe/Amsterdam
+    - name: Update & Upgrade
+      apt:
+        upgrade: dist
+        update_cache: yes
+        autoclean: yes
+        autoremove: yes
+    - name: Downloading 3CX SBC
+      get_url:
+        url: https://raw.githubusercontent.com/78wesley/3CX-SBC/master/3cxsbc.sh
+        dest: /tmp/3cxsbc.sh
+        remote_src: yes
+    - name: Installing 3CX SBC
+      shell: bash /tmp/3cxsbc.sh -u "{{url}}" -k "{{key}}" -a 1
+    - name: Reboot
+      reboot:
+        reboot_timeout: 60
+    - name: Changing Password
+      user:
+        name: pi
+        password: "{{ passwd | password_hash('sha512') }}"
