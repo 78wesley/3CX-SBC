@@ -1,4 +1,4 @@
-## Requirments
+## Requirements
 - Linux subsystem or a Linux system in the network
 - Ansible(Install below)
 - 3CX Server
