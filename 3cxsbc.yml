@@ -23,7 +23,7 @@
         autoremove: yes
     - name: Downloading 3CX SBC
       get_url:
-        url: https://raw.githubusercontent.com/78wesley/3CX-SBC/master/3cxsbc.sh
+        url: https://raw.githubusercontent.com/78wesley/3CX-SBC/main/3cxsbc.sh
         dest: /tmp/3cxsbc.sh
         remote_src: yes
     - name: Installing 3CX SBC
