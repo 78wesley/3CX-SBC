@@ -35,7 +35,7 @@ I recommend to use the SBC Password as the System password.
 ansible-playbook -i hosts 3cxsbc.sh
 ```
 ## How to use it manualy?
-
+Replace URL and KEY for your own 3CXC URL and KEY
 ```sh
 wget -O- https://raw.githubusercontent.com/78wesley/3CX-SBC/main/3cxsbc.sh | bash /dev/stdin -u "URL" -k "KEY" -a 1
 ```
