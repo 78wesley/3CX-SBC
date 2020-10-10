@@ -28,7 +28,7 @@
         remote_src: yes
     - name: Installing 3CX SBC
       shell: bash /tmp/3cxsbc.sh -u "{{url}}" -k "{{key}}" -a 1
-    - name: Reboot
+    - name: Rebooting
       reboot:
         reboot_timeout: 60
     - name: Changing Password
