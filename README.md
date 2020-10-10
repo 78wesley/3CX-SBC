@@ -30,7 +30,7 @@ In the bash script you will be ask for the following things.
 
 You can find this information if you add a new 3CX SBC at **SIP-Trunk > Add SBC**. 
 
-I recommend to use the SBC Password as the System password.
+I recommend to use the SBC Password as the system password.
 ```sh
 ansible-playbook -i hosts 3cxsbc.sh
 ```
