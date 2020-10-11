@@ -25,13 +25,13 @@ nano hosts
 ```
 ## 4. Run the Ansible script
 When you run the ansible script, the script will asks you to fill in the following information:
-- What will be the password of the system? (New password for the Raspberry Pi)
-- What is the Web Url? (3CX Web URL)
-- What is the Authentication KEY ID? (3CX Authentication KEY ID)
+- What will be the new password of the Raspberry Pi?
+- What is the Web Url of 3CX?
+- What is the SBC Authentication KEY ID?
 
 You can find this information if you add a new 3CX SBC within 3CX found at **SIP-Trunk** > **Add SBC**. 
 
-I recommend to use the SBC Password as the system password so you will always be able to retrieve the password.
+I recommend to use the SBC Password as the Raspberry Pi password so you will always be able to retrieve the password.
 ```sh
 ansible-playbook -i hosts 3cxsbc.sh
 ```
