@@ -9,10 +9,7 @@
 apt-add-repository ppa:ansible/ansible && apt install ansible
 ```
 ```sh
-cp -R /etc/ansible/ 3CXSBC
-```
-```sh
-cd 3CXSBC
+mkdir 3CXSBC && cd 3CXSBC
 ```
 ## 2. Download the Ansible script and the hosts file.
 ```sh
@@ -33,7 +30,7 @@ You can find this information if you add a new 3CX SBC within 3CX found at **SIP
 
 I recommend to use the SBC Password as the Raspberry Pi password so you will always be able to retrieve the password.
 ```sh
-ansible-playbook -i hosts 3cxsbc.sh
+ansible-playbook -i hosts 3cxsbc.yml
 ```
 ## Install the SBC without ansible (default SBC installer with headless install functionality)
 Replace URL and KEY for your own SBC url and key.
