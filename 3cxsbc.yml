@@ -30,7 +30,7 @@
       shell: bash /tmp/3cxsbc.sh -u "{{url}}" -k "{{key}}" -a 1
     - name: Rebooting
       reboot:
-        reboot_timeout: 60
+        reboot_timeout: 120
     - name: Changing Password
       user:
         name: pi
