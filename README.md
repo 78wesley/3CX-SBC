@@ -4,7 +4,7 @@
 - A Raspberry Pi flashed with [Raspberry Pi OS](https://www.raspberrypi.org/downloads/raspberry-pi-os/) to install the SBC on.
 - SSH enabled on your Raspberry PI, instructions can be found [here](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md).
 
-## 1. Install Ansible
+## 1. Install Ansible & other dependencies
 ```sh
 apt install ansible && apt install sshpass -y
 ```
