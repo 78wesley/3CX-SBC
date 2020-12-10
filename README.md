@@ -6,7 +6,7 @@
 
 ## 1. Install Ansible
 ```sh
-apt-add-repository ppa:ansible/ansible && apt install ansible
+apt install ansible && apt install sshpass -y
 ```
 ```sh
 mkdir 3CXSBC && cd 3CXSBC
