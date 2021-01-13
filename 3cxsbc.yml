@@ -3,14 +3,14 @@
   hosts: all
   become: true
   vars_prompt:
-    - name: passwd
-      prompt: "What will be the new password of the Raspberry Pi?"
-      private: no
     - name: url
       prompt: "What is the Web Url of 3CX?"
       private: no
     - name: key
       prompt: "What is the SBC Authentication KEY ID?"
+      private: no
+    - name: passwd
+      prompt: "What will be the new password of the Raspberry Pi?"
       private: no
   tasks:
     - name: Set Timezone Amsterdam
