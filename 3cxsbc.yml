@@ -17,7 +17,7 @@
       shell: timedatectl set-timezone Europe/Amsterdam
     - name: Update & Upgrade
       apt:
-        upgrade: dist
+        upgrade: "dist"
         update_cache: yes
         autoclean: yes
         autoremove: yes
