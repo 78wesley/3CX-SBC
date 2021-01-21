@@ -13,7 +13,7 @@ mkdir 3CXSBC && cd 3CXSBC
 ```
 ## 2. Download the Ansible script and the hosts file.
 ```sh
-wget https://raw.githubusercontent.com/78wesley/3CX-SBC/main/hosts
+wget https://raw.githubusercontent.com/78wesley/3CX-SBC/main/hosts && wget https://raw.githubusercontent.com/78wesley/3CX-SBC/main/3cxsbc.yml
 ```
 ## 3. Configure hosts
 Go to the hosts file and replace <ip> under **[all]** to the IP/Hostname of your Raspberry Pi on which you would like to install the 3CX SBC.  
