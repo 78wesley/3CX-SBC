@@ -22,7 +22,7 @@
         autoclean: yes
         autoremove: yes
     - name: Downloading 3CX SBC
-      get_url:
+      ansible.builtin.uri:
         url: https://raw.githubusercontent.com/78wesley/3CX-SBC/main/3cxsbc.sh
         dest: /tmp/3cxsbc.sh
         remote_src: yes
